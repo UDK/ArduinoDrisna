@@ -6,7 +6,6 @@ void setup() {
 }
 
 void loop() {
-//  Serial.write('a')
   if(Serial.available() !=0)
   {
     byte b = Serial.read();
@@ -14,7 +13,7 @@ void loop() {
     {
       digitalWrite(13,HIGH);
     }
-//По аски 50=2
+    //По аски 50=2
     else if(b==50)
     {
      digitalWrite(13,LOW); 
