@@ -15,6 +15,7 @@ namespace ArduinoGovn
     {
         public Form1()
         {
+
             InitializeComponent();
             SerialPort port = new SerialPort("COM4");
             port.Open();
