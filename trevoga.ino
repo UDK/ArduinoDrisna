@@ -3,12 +3,13 @@
 SoftwareSerial gprsSerial(7, 8);
 
 int btnPin = 12;
-boolean prevBtn = LOW;
+
 
 void setup()
 {
     gprsSerial.begin(19200);
     delay(500);
+    pinMode(btnPin, OUTPUT);
 }
 
 void loop()
@@ -18,7 +19,7 @@ void loop()
         //сразу после нажатия кнопки отправляем "тревожное" сообщение по заданному номеру
         sendTextMessage();
     }
-    prevBtn = currBtn;
+   
 }
 
 /*
