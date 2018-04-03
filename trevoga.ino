@@ -15,7 +15,7 @@ void setup()
 void loop()
 {
     boolean currBtn = digitalRead(btnPin);
-    if (currBtn==1) {
+    if (currBtn==true) {
         //сразу после нажатия кнопки отправляем "тревожное" сообщение по заданному номеру
         sendTextMessage();
     }
