@@ -34,9 +34,10 @@ void sendTextMessage() {
     // Пишем текст сообщения
     gprsSerial.println("Trevoga");
     delay(100);
-    if(gprsSerial.println){
-    Serial.println('1');
+   
     }
+ if(gprsSerial.println){
+    Serial.println('1');
     // Отправляем Ctrl+Z, обозначая, что сообщение готово
     gprsSerial.println((char)26);
 }
