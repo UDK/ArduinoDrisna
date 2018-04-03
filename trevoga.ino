@@ -29,7 +29,7 @@ void sendTextMessage() {
     gprsSerial.print("AT+CMGF=1\r");
     delay(100); // даём время на усваивание команды
     // Устанавливаем адресата: телефонный номер в международном формате
-    gprsSerial.println("AT + CMGS = \"+7\"");
+    gprsSerial.println("AT + CMGS = \"+79044033778\"");
     delay(100);
     // Пишем текст сообщения
     gprsSerial.println("Trevoga");
