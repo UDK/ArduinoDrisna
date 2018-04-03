@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.SuspendLayout();
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(457, 453);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 1024);
+            this.Controls.Add(this.radioButton1);
+            this.Name = "Form1";
             this.Text = "Сигнализация";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
